@@ -709,7 +709,52 @@ h2 em {
 ===================================================== */
 
 .process {
+    position: relative;
+
     background: var(--light);
+
+    overflow: hidden;
+}
+
+.process::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("Transparentbg.png")
+        center / cover
+        no-repeat;
+
+    opacity: 0.4;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.process::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba(244, 221, 216, 0.78),
+        rgba(251, 243, 239, 0.72)
+    );
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.process .container {
+    position: relative;
+
+    z-index: 1;
 }
 
 .process-grid {
