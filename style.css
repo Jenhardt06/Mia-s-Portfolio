@@ -727,7 +727,7 @@ h2 em {
         center / cover
         no-repeat;
 
-    opacity: 0.4;
+    opacity: 0.72;
 
     pointer-events: none;
 
@@ -742,8 +742,8 @@ h2 em {
 
     background: linear-gradient(
         180deg,
-        rgba(244, 221, 216, 0.78),
-        rgba(251, 243, 239, 0.72)
+        rgba(244, 221, 216, 0.42),
+        rgba(251, 243, 239, 0.38)
     );
 
     pointer-events: none;
@@ -757,23 +757,35 @@ h2 em {
     z-index: 1;
 }
 
+.process .eyebrow,
+.process .section-heading > p,
+.process-step > span,
+.process-step p {
+    color: #2a221f;
+}
+
+.process h2,
+.process-step h3 {
+    color: #1f1917;
+}
+
 .process-grid {
     display: grid;
 
     grid-template-columns:
         repeat(4, 1fr);
 
-    border-top: 1px solid var(--border);
+    border-top: 1px solid rgba(31, 25, 23, 0.35);
 }
 
 .process-step {
     padding: 40px 30px;
 
-    border-right: 1px solid var(--border);
+    border-right: 1px solid rgba(31, 25, 23, 0.35);
 }
 
 .process-step:first-child {
-    border-left: 1px solid var(--border);
+    border-left: 1px solid rgba(31, 25, 23, 0.35);
 }
 
 .process-step > span {
@@ -782,6 +794,8 @@ h2 em {
     display: block;
 
     margin-bottom: 70px;
+
+    font-weight: 600;
 }
 
 .process-step h3 {
@@ -793,9 +807,9 @@ h2 em {
 }
 
 .process-step p {
-    color: var(--grey);
-
     font-size: 14px;
+
+    font-weight: 500;
 }
 
 
